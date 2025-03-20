@@ -1,0 +1,8 @@
+path='C://Users//analysis//Desktop//1.csv'
+data = np.loadtxt(open(path, 'rb'), dtype=np.float64, delimiter=',', skiprows=0)#读取数据
+wavelength = data[1, :]
+f = open('C://Users//analysis//Desktop//PLSmodel.pkl', 'rb')
+clf = pickle.load(f)
+f.close()
+Y_pred = clf.predict(np.array(wavelength).reshape(1, -1))
+print(Y_pred)

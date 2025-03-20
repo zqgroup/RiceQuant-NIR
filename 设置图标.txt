@@ -1,0 +1,8 @@
+icon = QtGui.QIcon()
+icon.addPixmap(QtGui.QPixmap("rice.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+Form.setWindowIcon(icon)
+
+
+
+
+Form.setWindowTitle(_translate("Form", "PreRice")) #最后一排
